@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        app:navigationIcon="@drawable/ic_iconfinder_tech_0009_4023879"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="Wanunuzi.Com"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorAccent"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:id="@+id/toolbar_title" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="@string/title_moto"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#898989"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:id="@+id/toolbar_subtitle" />
+      </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.Theme.AppCompat.Light"
+        android:background="@android:color/white">
+    </android.support.design.widget.TabLayout>
+  </android.support.design.widget.AppBarLayout>
+  <android.support.v4.view.ViewPager
+      android:id="@+id/viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+  </android.support.v4.view.ViewPager>
+</android.support.design.widget.CoordinatorLayout>

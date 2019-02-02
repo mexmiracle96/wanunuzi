@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:padding="15dp">
+  <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="10dp"
+      android:layout_marginTop="10dp"
+      android:text="@string/title_share_head"
+      android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+  <TextView
+      android:id="@+id/tv_detail"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="5dp"
+      android:text="@string/title_share_description"
+      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/fb"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_icons8_facebook"/>
+    <ImageButton
+        android:id="@+id/insta"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_icons8_instagram" />
+    <ImageButton
+        android:id="@+id/whatsapp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_icons8_whatsapp"/>
+    <ImageButton
+        android:id="@+id/twitter"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_icons8_twitter"/>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:gravity="right"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_close"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_close"/>
+  </LinearLayout>
+</LinearLayout>

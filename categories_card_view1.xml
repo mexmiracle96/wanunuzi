@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="@android:color/white">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/fila"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#aacccccc"
+        android:layout_centerInParent="true"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txtHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoes"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:padding="3dp"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+</RelativeLayout>

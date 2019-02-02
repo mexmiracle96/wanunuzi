@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical">
+  <ImageView
+      android:id="@+id/circleUser"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
+      android:layout_marginLeft="5dp"
+      android:layout_alignParentLeft="true"
+      android:src="@drawable/ic_account_circle_header_24dp"
+      android:gravity="center"
+      android:layout_marginTop="10dp"
+      android:elevation="6dp"
+      android:textColor="@android:color/white"
+      android:textSize="20sp" />
+  <TextView
+      android:id="@+id/txtUser"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/circleUser"
+      android:gravity="center"
+      android:layout_marginTop="20sp"
+      android:layout_marginLeft="8dp"
+      android:text="Michale"
+      android:padding="5dp"
+      android:textColor="@android:color/white"
+      android:textSize="15sp" />
+  <TextView
+      android:id="@+id/txtContacts"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/txtUser"
+      android:gravity="center"
+      android:layout_marginLeft="8dp"
+      android:text="075444333"
+      android:padding="5dp"
+      android:textColor="@android:color/white"
+      android:textSize="15sp" />
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+  <RelativeLayout
+      android:id="@+id/relativeLayout"
+      android:layout_width="match_parent"
+      android:layout_height="110dp"
+      android:focusable="true"
+      android:background="?android:attr/selectableItemBackground">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="7dp"
+        android:padding="5dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitCenter"/>
+    <RelativeLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_toEndOf="@id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+      <TextView
+          android:id="@+id/txtProduct"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:fontFamily="sans-serif"
+          android:padding="2dp"
+          android:maxLines="2"
+          android:layout_toStartOf="@+id/btnMore"
+          android:text="SUMSUNG GALAYX 3MP  3D Get Em Now Offer Is Limited"
+          android:ellipsize="end"
+          android:textSize="15sp" />
+      <TextView
+          android:id="@+id/textCost"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#000"
+          android:fontFamily="sans-serif"
+          android:padding="2dp"
+          android:maxLines="1"
+          android:layout_below="@+id/txtProduct"
+          android:text="Tsh 200,000"
+          android:paddingBottom="4dp"
+          android:textSize="16sp" />
+      <TextView
+          android:id="@+id/txtOff"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_below="@+id/textCost"
+          android:textColor="@color/colorAccent"
+          android:layout_marginTop="2dp"
+          android:visibility="visible"
+          android:fontFamily="sans-serif"
+          android:padding="2dp"
+          android:text="Tsh 200,000"
+          android:textSize="14sp"/>
+    </RelativeLayout>
+  </RelativeLayout>
+  <TextView
+      android:id="@+id/lblOff"
+      android:layout_width="39dp"
+      android:layout_height="wrap_content"
+      android:text="-14%"
+      android:padding="2dp"
+      android:gravity="center"
+      android:layout_margin="10dp"
+      android:background="@color/colorAccent"
+      android:textColor="@android:color/white"/>
+</FrameLayout>

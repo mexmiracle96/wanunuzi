@@ -1,0 +1,30 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+  <View
+      android:layout_width="100dp"
+      android:layout_height="1dp"
+      android:background="#c7c7c7"
+      android:layout_marginTop="15dp"
+      android:layout_gravity="center_horizontal"/>
+  <TextView
+      android:id="@+id/txtTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="6dp"
+      android:fontFamily="sans-serif"
+      android:padding="2dp"
+      style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="10dp"
+      android:text="Zilizo Juu" />
+  <View
+      android:layout_width="100dp"
+      android:layout_height="1dp"
+      android:background="#c7c7c7"
+      android:layout_marginBottom="15dp"
+      android:layout_gravity="center_horizontal"/>
+</LinearLayout>

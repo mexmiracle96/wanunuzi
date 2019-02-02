@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      android:paddingBottom="5dp">
+    <ImageView
+        android:padding="4dp"
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:paddingLeft="10dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+      <TextView
+          android:id="@+id/txtProduct"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_marginTop="6dp"
+          android:fontFamily="sans-serif"
+          android:padding="5dp"
+          android:ellipsize="end"
+          android:maxLines="2"
+          android:text="Product  New From Our Store"
+          android:textColor="#000"
+          android:textSize="15sp" />
+      <TextView
+          android:id="@+id/txtPrice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/txtProduct"
+          android:layout_toEndOf="@+id/txtQty"
+          android:fontFamily="sans-serif"
+          android:layout_marginTop="10dp"
+          android:padding="5dp"
+          android:textColor="#4AC1E3"
+          android:layout_alignParentStart="true"
+          android:transitionName="priceTransition"
+          android:text="TSh 200,000"
+          android:textSize="15sp" />
+      <TextView
+          android:id="@+id/txtQty"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:text="1"
+          android:gravity="center"
+          android:layout_marginRight="5dp"
+          android:background="#EBF1F3"
+          android:layout_below="@+id/txtProduct"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"/>
+      <TextView
+          android:id="@+id/txtOff"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_below="@+id/txtPrice"
+          android:layout_marginLeft="2dp"
+          android:textColor="@color/colorAccent"
+          android:layout_marginTop="2dp"
+          android:fontFamily="sans-serif"
+          android:paddingLeft="5dp"
+          android:text="Tsh 200,000"
+          android:textSize="13sp" />
+    </RelativeLayout>
+  </LinearLayout>
+</android.support.v7.widget.CardView>

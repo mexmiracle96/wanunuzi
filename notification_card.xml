@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      style="@style/Widget.CardContent1"
+      android:layout_width="match_parent"
+      android:layout_height="120dp"
+      android:focusable="true"
+      android:background="?android:attr/selectableItemBackground"
+      android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txtCircle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/ic_lens2_black_24dp"
+        android:gravity="center"
+        android:text="S"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+      <TextView
+          android:id="@+id/txtUser"
+          style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_below="@+id/imageView2"
+          android:layout_marginLeft="4dp"
+          android:text="Safari Shoppers"
+          android:textStyle="bold"
+          android:textSize="15sp" />
+      <TextView
+          android:id="@+id/txtBody"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ellipsize="end"
+          android:maxLines="2"
+          android:padding="5dp"
+          android:text="Hi Michael your we got some new offers for you. Visit our shop for great deals"
+          android:textColor="#000"
+          android:textSize="13sp"
+          android:textStyle="bold" />
+      <TextView
+          android:id="@+id/txtPostTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:padding="5dp"
+          android:text="Dec 12"
+          android:textColor="@color/colorPrimary3"
+          android:textSize="13sp"
+          android:textStyle="italic|bold" />
+    </LinearLayout>
+</LinearLayout>

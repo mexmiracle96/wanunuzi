@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+      <TextView
+          android:id="@+id/userAvarta"
+          style="@style/TextAppearance.AppCompat.Title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="0dp"
+          android:layout_marginTop="6dp"
+          android:background="@drawable/ic_lens_black2_24dp"
+          android:gravity="center"
+          android:text="M"
+          android:textColor="@android:color/white" />
+
+      <RelativeLayout
+          android:id="@+id/layoutBody"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+
+          android:layout_toEndOf="@+id/userAvarta"
+          android:padding="6dp">
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/postDate"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="Michale Peter "
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/postDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:padding="1dp"
+            android:text="02/15/2017"
+            android:textSize="13sp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/txtReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="sans-serif"
+            android:padding="1dp"
+            android:text="Sorry Michael for the delay  our team is working on it"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+      </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="visible">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+      <TextView
+          android:id="@+id/moderator"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="sans-serif"
+          android:padding="5dp"
+          android:text="Reply from Safari Shoppers"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/replyDate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/moderator"
+          android:layout_marginBottom="4dp"
+          android:layout_marginLeft="4dp"
+          android:fontFamily="sans-serif"
+          android:padding="1dp"
+          android:text="02/15/2017"
+          android:textSize="13sp"
+          android:textStyle="italic" />
+
+      <TextView
+          android:id="@+id/postReply"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/replyDate"
+          android:layout_marginBottom="5dp"
+          android:layout_marginLeft="4dp"
+          android:layout_marginTop="3dp"
+          android:fontFamily="sans-serif"
+          android:padding="1dp"
+          android:text="Sorry Michael for the delay our team is working on it"
+          android:textSize="14sp"
+          android:textStyle="italic" />
+    </RelativeLayout>
+  </RelativeLayout>
+</LinearLayout>
