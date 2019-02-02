@@ -1,0 +1,34 @@
+
+Condition: 
+"new"
+Currency: 
+"USD"
+Description: 
+"some description"
+Location_Adrress: 
+"Dar"
+Price: 
+Price
+Product: 
+"Alien Ware XD 4"
+ProductID: 
+5
+Seller: 
+"Safari Shoppers"
+Seller_Email: 
+"safari@gmail.com"
+Seller_Mobile_1: 
+"07552554"
+Seller_Mobile_2: 
+"078541545"
+Seller_Thumbnail: 
+"none"
+Sizes: 
+"All"
+Thumbnail_1: 
+"none"
+Thumbnail_2: 
+"none"
+Thumbnail_3: 
+"none"
+Uploaded: 
